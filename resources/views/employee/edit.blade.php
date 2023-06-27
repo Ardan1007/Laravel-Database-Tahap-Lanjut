@@ -32,11 +32,6 @@
         </div>
     </nav> --}}
 
-    @extends('layouts.app')
-
-    @section('content')
-        <div class="container-sm mt-5">
-
             {{-- Laravel Database --}}
             {{-- <form action="{{ route('employees.update',['employee' => $employee->employee_id]) }}" method="POST">
                 @csrf
@@ -103,6 +98,10 @@
                 </div>
             </form> --}}
 
+    @extends('layouts.app')
+
+    @section('content')
+        <div class="container-sm mt-5">
             <form action="{{ route('employees.update', ['employee' => $employee->id]) }}" method="POST">
                 @csrf
                 @method('put')

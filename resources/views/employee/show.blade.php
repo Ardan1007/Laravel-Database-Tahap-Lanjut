@@ -32,12 +32,6 @@
         </div>
     </nav> --}}
 
-    @extends('layouts.app')
-
-    @section('content')
-
-        <div class="container-sm my-5">
-
         {{-- Laravel Database --}}
         {{-- <div class="container-sm my-5">
             <div class="row justify-content-center">
@@ -78,7 +72,11 @@
                 </div>
             </div>
         </div> --}}
+    @extends('layouts.app')
 
+    @section('content')
+
+        <div class="container-sm my-5">
             <div class="row justify-content-center">
                 <div class="p-5 bg-light rounded-3 col-xl-4 border">
                     <div class="mb-3 text-center">

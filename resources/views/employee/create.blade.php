@@ -32,11 +32,6 @@
         </div>
     </nav> --}}
 
-    @extends('layouts.app')
-
-    @section('content')
-        <div class="container-sm mt-5">
-
             {{-- Laravel Database
             <form action="{{ route('employees.store') }}" method="POST">
                 @csrf
@@ -101,6 +96,11 @@
                     </div>
                 </div>
             </form> --}}
+
+    @extends('layouts.app')
+
+    @section('content')
+        <div class="container-sm mt-5">
 
             <form action="{{ route('employees.store') }}" method="POST">
                 @csrf
