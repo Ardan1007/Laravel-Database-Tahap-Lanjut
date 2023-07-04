@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>{{ $pageTitle }}</title>
     @vite('resources/sass/app.scss')
 </head>
-<body>
+<body> --}}
     {{-- Laravel Database --}}
     {{-- <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
@@ -104,6 +104,17 @@
                         <div class="col-md-12 mb-3">
                             <label for="age" class="form-label">Position</label>
                             <h5>{{ $employee->position->name }}</h5>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="age" class="form-label">Curriculum Vitae (CV)</label>
+                            @if ($employee->original_filename)
+                                <h5>{{ $employee->original_filename }}</h5>
+                                <a href="{{ route('employees.downloadFile', ['employeeId' => $employee->id]) }}" class="btn btn-primary btn-sm mt-2">
+                                    <i class="bi bi-download me-1"></i> Download CV
+                                </a>
+                            @else
+                                <h5>Tidak ada</h5>
+                            @endif
                         </div>
                     </div>
                     <hr>
