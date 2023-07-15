@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>{{ $pageTitle }}</title>
     @vite('resources/sass/app.scss')
 </head>
-<body>
+<body> --}}
     {{-- Laravel Database --}}
     {{-- <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
@@ -189,6 +189,6 @@
             </form>
         </div>
     @endsection
-    @vite('resources/js/app.js')
+    {{-- @vite('resources/js/app.js')
 </body>
-</html>
+</html> --}}
